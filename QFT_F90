@@ -1,0 +1,15 @@
+Explanation:
+
+    Initialization:
+        n represents the number of qubits. Here, it's set to 3, so the program operates on a system with 3 qubits.
+        input_state is the state vector representing the input state amplitudes. You should replace this with the actual quantum state you want to transform.
+
+    Quantum Fourier Transform Calculation:
+        The QFT is implemented by computing the sum of input amplitudes multiplied by a complex phase factor, $exp(2πi * (i * j) / 2^n)$.
+        The outer loop iterates over each output state index i, and the inner loop sums over all input states j.
+
+    Normalization:
+        The resulting state is normalized by dividing by sqrt(2^n) to ensure the output state is a valid quantum state.
+
+    Output:
+        The transformed state is printed to the console.
